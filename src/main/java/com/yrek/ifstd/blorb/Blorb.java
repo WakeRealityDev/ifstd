@@ -164,5 +164,10 @@ public abstract class Blorb implements Closeable {
         public Chunk getChunk() {
             return chunks.get(start);
         }
+
+        @Override
+        public String toString() {
+            return "number " + getNumber() + " usage " + getUsage();
+        }
     }
 }
